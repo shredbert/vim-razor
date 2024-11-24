@@ -16,7 +16,7 @@ setlocal
     \ commentstring=@*%s*@
     \ suffixesadd=.cshtml,.razor
 
-let b:undo_ftplugin ..= " | unlet! setlocal comments< commentstring< suffixesadd<"
+let b:undo_ftplugin ..= " | setlocal comments< commentstring< suffixesadd<"
 
 " Change the :browse filter to primarily show HTML-related files.
 "
